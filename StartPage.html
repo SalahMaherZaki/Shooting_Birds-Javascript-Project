@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ducks Hunt Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8" />
+    <!-- <script type="text/javascript" src="public/js/main.js"></script> -->
+</head>
+<!--**************************** start Eslam ********************-->
+<body id="GamePage2">
+    <div id="parentdiv">
+        
+        <div id="gamePupUp" class="charPopUp">
+            <form action="TheGame.html" id="userForm" method="GET">
+                <div class="imgcontainer" align="center">
+                    <!-- <span onclick="location.href='#'" id="close4" class="close" title="Close PopUp">&times;</span> -->
+                    <h1 style="color: rgb(0, 0, 0);">Select Game Level</h1>
+                    <div class="select" id="select">
+                        <select name="slct" id="level" class="slct">
+                          <option  selected disabled>Choose an option</option>
+                          <option value="level1">Level 1</option>
+                          <option value="level2">Level 2</option>
+                        </select>
+                      </div>
+                      <!--**************************** End Eslam ************-->
+                      <!--**************************** Start Salah ************-->
+                    <h1 style="color: rgb(0, 0, 0);">Enter Your Name</h1>
+                    <div>
+                        <input id="username" type="text" placeholder="Enter your Name">
+                        <p id="warning" style="display:none;color:red;">Please insert your name to play</p>
+                    </div>
+                    <div align="center">
+                        <!-- <button id="playNow" onclick="starterFun()" >Play Now</button> -->
+                        <input type="submit" id="playNow" value="Go" onclick="passName()">
+                    </div>
+                </div>
+        </div>
+        </form>
+        <!--**************************** End Salah ************-->
+        <!--**************************** start anis ************-->
+        <div id="pluspoint">
+            <h1 style="text-align: center; color: rgb(0, 0, 0);"> Game Bird Shooting Points</h1>
+            <div>
+                <label style="font-size: 40pt; font-weight: bold; color: darkblue;">
+                    <img class="birdpoint" src="images/pinkbird.gif" alt="level1"> +5 Points
+                </label>
+            </div>
+            <label style="font-size: 40pt; font-weight: bold; color: darkorange;">
+                <img class="birdpoint" src="images/blackbird.gif" alt="level1"> +10 Points
+            </label>
+            <div>
+                <label style="font-size: 40pt; font-weight: bold; color: red;">
+                    <img class="birdpoint" src="images/bluebird.gif" alt="level1"> -10 Points
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!--**************************** End anis ************-->
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+
+</html>

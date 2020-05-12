@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Ducks Hunt Game</title>
+            <link rel="stylesheet" href="css/sweetalert.css">
+            <link rel="stylesheet"  href="css/style.css">
+            <!-- <meta charset="utf-8"/> -->
+            <!-- <script type="text/javascript" src="public/js/main.js"></script> -->
+        </head>
+        <!--**************************** start anis ************-->
+        <body id="GamePage1">
+            <div id="countersdiv">
+                <p class="counters">Welcome : <span id="result"></span></p>  
+                <p class="counters">Score : <span id="game-score">0</span></p>
+                <p class="counters">Time Limit : <span id="time-limit">0:0</span></p>
+                <p class="counters">Birds Killed : <span id="bird_count">0</span></p>  
+                 
+            </div>
+            <!--**************************** End anis ************-->
+            <!--**************************** start salah ************-->
+            <audio id="bkAduio" loop="true">    
+                <source src="audio/game.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <audio id="shootAduio">
+                <source src="audio\GUN_FIRE.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <audio id="lossAduio">
+                <source src="audio/lose funny.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <audio id="winAduio">
+                <source src="audio/win-sound.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <audio id="birdDie">
+                <source src="audio/bird_die.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <audio id="bombAudio">
+                <source src="audio/bomb.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <!--**************************** end anis ************-->
+            <!--**************************** start salah ************-->
+            <div id="startGameBg">
+                <button type="button" id="start-game-btn"  onclick="startGame()">Start Game</button>
+            </div>
+            <div >
+                <button onclick="location.href='StartPage.html'" class="backbtn" >Back</button>
+            </div>
+            <!--**************************** end salah ************-->
+            <!--**************************** anis & eslam ************-->
+            <div id="lossPopUp" style="display:none;">   
+                <div class="imgcontainer">
+                <span onclick="location.href='StartPage.html'" id="close4" class="close" title="Close to back to main page">&times;</span>                  
+                <h1>YOU LOSE</h1>  
+                </div>
+                <div align ="center">   
+                      <form id='lossForm' >        
+                          <img id="loseimg" src="images/Hhi7.gif" alt="">   
+                      </form>
+                          <input onclick="location.href='TheGame.html'" id='tryAgain' type="button" value="Play Again">
+                </div>
+                
+              </div>  
+              
+              <!--win pop--> 
+              <div id="winPopUp" style="display:none;">   
+                <div class="imgcontainer">
+                <span onclick="location.href='StartPage.html'" id="close4" class="close" title="Close to back to main page">&times;</span>                  
+                <h1>YOU WIN</h1>  
+                <h3>You killed <label id="birdsResult"></label> birds with score : <label id="scoreResult"></label></h3>
+                </div>
+                <div align="center">   
+                      <form id='winForm' >        
+                          <img id="winimg" src="images/tenor.gif" alt="Winner">   
+                      </form>
+                          <input onclick="location.href='TheGame.html'" id='tryAgain' type="button" value="Play Again">
+                </div>
+                
+              </div>   
+              <div style="align-content: center;">   
+                
+        </div>  
+        </body>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/sweetalert.js"></script>
+        <script src="js/main.js"></script>  
+    </html>
+
+

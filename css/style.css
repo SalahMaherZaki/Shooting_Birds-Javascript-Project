@@ -1,0 +1,310 @@
+/******************** Eslam & Salah & Anis ***********************/
+*{
+    margin: 0;
+   padding: 0;
+   user-select: none;
+   cursor: url("../images/scope.cur"),default; 
+   
+ } 
+ body {
+   overflow: hidden; /* Hide scrollbars */
+ }
+ #GamePage1{
+     background : url("../images/bgPage1.jpg");
+     -webkit-animation: duckgameBG 2s linear;
+     background-repeat: repeat-y; 
+     background-size: 100%;
+     user-select: none;
+     background-position:absolute;
+ }
+ #GamePage2{
+   background : url("../images/bg2.png");
+   background-size: 100%;
+   background-repeat: repeat-y;
+   /* cursor: default; */
+ }
+ #startGameBg{
+   display: none;
+ }
+ @-webkit-keyframes duckgameBG {
+     from { background-position: 0 100%; }
+     to { background-position: 0 0; }
+ }
+ .backbtn {
+   width: 150px;  
+   height: 50px;
+   border:solid black;
+   border-radius: 50px;
+   background-color:rgba(87, 39, 39, 0.4);
+   color:black;
+   font-size: 20pt;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-weight: bold;
+   position: absolute;
+   bottom: 20px;
+   left: 20px;
+ }
+
+ 
+ #username,#playNow{
+   border-radius: 30px;
+   outline: none;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+ #start-game-btn{
+   width: 200px;  
+   height: 50px;
+   border:solid black;
+   background-color:rgba(87, 39, 39, 0.4);
+   color:black;
+   font-size: 20pt;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-weight: bold;
+   position: absolute;
+   bottom: 20px;
+   right: 20px;
+   border-radius: 30px;
+   outline: none;
+ }
+ .counters{
+   border: 3px none yellow;
+   background-color:rgba(87, 39, 39, 0.4);
+   /* height: 30px; */
+   border-radius: 30px;
+   width: 260px;
+   text-align: center;
+   /* margin-left: 150px; */
+   margin-left: 30px;
+   margin-top: 10px;
+   padding: 5px;
+   display: inline-block;
+   position: relative;
+   color: rgb(0, 250, 250);
+   font-size: 2pc;
+   font-weight: bold;
+ }
+ .birdpoint{
+   width: 50px;
+   height: 50px;
+   margin-top: 10px;
+ }
+ 
+ 
+ .imgcontainer {
+   text-align: center;
+   margin: 5px;
+   position: relative;
+ }
+ .charPopUp {
+   background-color:rgba(196, 190, 190, 0.4);
+   margin: 1% auto 1% auto;
+   border: 1px solid rgb(61, 60, 60);
+   width: 35%;
+   height: 260px;
+   border-radius: 5%;
+   /* cursor: default; */
+ }
+ #playNow{
+   /* background-color: rgb(184, 184, 184);
+     */
+     border: solid black 2px;
+     border-radius: 20px;
+     width: 150px;
+     /* height: 30px; */
+     margin-top: 15px;
+     font-size: 20pt;
+     font-weight: bold;
+     color: rgb(90, 180, 0);
+ }
+ #username{
+   width: 250px;
+   height: 30px;
+   margin: 5px;
+   font-size: 25px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   border-radius: 10px;
+   outline: none;
+   background-color: rgba(172, 172, 172, 0.4);
+ }
+ #username:hover,#playNow:hover,.radiobtn:hover{
+   cursor: pointer;
+ }
+ #playNow:hover{
+   background-color: red;
+   color: white;
+   transform: scale(1.2);
+   transition:all 1s cubic-bezier(0.23, 1, 0.320, 1);
+ }
+ .levlchk{
+   font-size: 30px;
+   font-weight: bold;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+ .radiobtn{
+   width: 20px;
+   height: 20px;
+   margin-top: 10px;
+ }
+ #countersdiv{
+   margin-top: 15px;
+ }
+  #pluspoint{
+   background-color:rgba(196, 190, 190, 0.4);
+   border: 1px solid rgb(61, 60, 60);
+   width: 35%;
+   height: 260px;
+   border-radius: 5%;
+   margin: 3% auto 1% auto;
+   text-align: center; 
+  
+ } 
+ #start-game-btn:hover,.backbtn:hover{
+   background-color: red;
+   color: white;
+   transform: scale(1.2);
+   transition:all 1s cubic-bezier(0.23, 1, 0.320, 1);
+   cursor: pointer;
+ }
+ /*******************************************************************************/
+ #lossPopUp,#winPopUp{
+   background-color:rgba(90, 90, 90, 0.4);
+   border: 2px solid rgb(61, 60, 60);
+   border-radius: 10%;
+   width: 40%;
+   height: 400px;
+   margin: 1% auto 1% auto;
+ 
+ 
+ }
+ .close {
+   position: absolute;
+   right: 25px;
+   height: 10px;
+   top: 0;
+   color: #000;
+   font-size: 35pt;
+   font-weight: bold;
+ }
+ .close:hover{
+   color: red;
+ }
+ #tryAgain {
+   text-align: center;
+   font-size: 15pt;
+   font-weight: bold;
+   margin-left: 15px;
+   margin-top: 10px;
+   width: 200px;
+   padding: 10px;
+   border-radius: 8px;
+   background-color: rgb(204, 255, 17);
+   border: none;
+   color: rgb(14, 6, 6);
+   cursor: pointer;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+ #tryAgain:hover{
+   color: white;
+   background-color: rgb(255, 0, 0);
+   transform: scale(1.2);
+   transition:all 1s cubic-bezier(0.230, 1, 0.320, 1);
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+ 
+ .allBirds {
+   width: 120px;
+   height: 120px;
+   position: absolute;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   
+ }
+ .btn-primary{
+   margin-top: 15px;
+   cursor: pointer;
+   color: #fff;
+   background-color: #dc3545;
+   border-color: #dc3545;
+   display: inline-block;
+     font-weight: 400;
+     text-align: center;
+     white-space: nowrap;
+     vertical-align: middle;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+     border: 1px solid transparent;
+     padding: .375rem .75rem;
+     font-size: 1rem;
+     line-height: 1.5;
+     border-radius: .25rem;
+     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+ 
+ }
+ .btn-primary{
+   background-color:green;
+ }
+ #birdsResult,#scoreResult{
+   color: red;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 29pt;
+   
+ }
+ h3{
+   color: yellow;
+   
+   margin: 10px;
+   font-size: 20pt;
+ }
+ .area{
+   width: 250px;
+   height: 250px;
+   /* border: 2px solid; */
+ }
+ .bomb{
+   width: 60px;
+   height: 80px;
+   position: absolute
+ }
+
+
+ .select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: .25em;
+  left: 70px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+select {
+  flex: 1;
+  padding: 0 .5em;
+  color: rgb(40, 34, 126);
+  cursor: pointer;
+
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #34495e;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
